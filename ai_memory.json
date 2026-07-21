@@ -1,0 +1,153 @@
+{
+  "student_b2g514676": {
+    "chatHistory": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "hello"
+          }
+        ]
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "{\n  \"ui_japanese\": \"こんにちは！元気ですか？\",\n  \"ui_romaji\": \"Konnichiwa! Genki desu ka?\",\n  \"ui_english\": \"Hello! How are you?\",\n  \"spoken_payload\": \"こんにちは！元気ですか？ Konnichiwa! Genki desu ka?\",\n  \"new_vocabulary\": [\n    {\n      \"japanese\": \"元気\",\n      \"romaji\": \"genki\",\n      \"english\": \"healthy/fine\"\n    }\n  ]\n}"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "hello"
+          }
+        ]
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "{\n  \"ui_japanese\": \"こんにちは！今日はいい天気ですね。\",\n  \"ui_romaji\": \"Konnichiwa! Kyou wa ii tenki desu ne.\",\n  \"ui_english\": \"Hello! The weather is nice today, isn't it?\",\n  \"spoken_payload\": \"こんにちは！今日はいい天気ですね。 Konnichiwa! Kyou wa ii tenki desu ne.\",\n  \"new_vocabulary\": [\n    {\n      \"japanese\": \"天気\",\n      \"romaji\": \"tenki\",\n      \"english\": \"weather\"\n    }\n  ]\n}"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "hello"
+          }
+        ]
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "{\n  \"ui_japanese\": \"こんにちは！一緒に日本語を勉強しましょう。\",\n  \"ui_romaji\": \"Konnichiwa! Issho ni nihongo o benkyou shimashou.\",\n  \"ui_english\": \"Hello! Let's study Japanese together.\",\n  \"spoken_payload\": \"こんにちは！一緒に日本語を勉強しましょう。 Konnichiwa! Issho ni nihongo o benkyou shimashou.\",\n  \"new_vocabulary\": [\n    {\n      \"japanese\": \"勉強\",\n      \"romaji\": \"benkyou\",\n      \"english\": \"study\"\n    }\n  ]\n}"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "i want a juice can"
+          }
+        ]
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "{\n  \"ui_japanese\": \"ありがとうございます。袋はいりますか？150円です。\",\n  \"ui_romaji\": \"Arigatou gozaimasu. Fukuro wa irimasu ka? Hyakugojuu-en desu.\",\n  \"ui_english\": \"Thank you. Do you need a bag? That will be 150 yen.\",\n  \"spoken_payload\": \"ありがとうございます。袋はいりますか？150円です。 Arigatou gozaimasu. Fukuro wa irimasu ka? Hyakugojuu-en desu.\",\n  \"new_vocabulary\": [\n    {\n      \"japanese\": \"袋\",\n      \"romaji\": \"fukuro\",\n      \"english\": \"bag\"\n    }\n  ]\n}"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "i want a juice can"
+          }
+        ]
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "{\n  \"ui_japanese\": \"「ジュースをください」と言いましょう。りんごジュースが好きですか？\",\n  \"ui_romaji\": \"\\\"Juusu o kudasai\\\" to iimashou. Ringo juusu ga suki desu ka?\",\n  \"ui_english\": \"Let's say \\\"Please give me a juice.\\\" Do you like apple juice?\",\n  \"spoken_payload\": \"「ジュースをください」と言いましょう。りんごジュースが好きですか？ \\\"Juusu o kudasai\\\" to iimashou. Ringo juusu ga suki desu ka?\",\n  \"new_vocabulary\": [\n    {\n      \"japanese\": \"ください\",\n      \"romaji\": \"kudasai\",\n      \"english\": \"please give me\"\n    }\n  ]\n}"
+          }
+        ]
+      }
+    ],
+    "studentProfile": {
+      "level": 1,
+      "xp": 75,
+      "mastered_vocabulary": [
+        {
+          "japanese": "ラーメン屋",
+          "romaji": "raamen-ya",
+          "english": "ramen shop"
+        },
+        {
+          "japanese": "名前",
+          "romaji": "namae",
+          "english": "name"
+        },
+        {
+          "japanese": "メニュー",
+          "romaji": "menyuu",
+          "english": "menu"
+        },
+        {
+          "japanese": "麺",
+          "romaji": "men",
+          "english": "noodles"
+        },
+        {
+          "japanese": "スープ",
+          "romaji": "suupu",
+          "english": "soup"
+        },
+        {
+          "japanese": "チャーシュー",
+          "romaji": "chaashuu",
+          "english": "roast pork"
+        },
+        {
+          "japanese": "にぎやか",
+          "romaji": "nigiyaka",
+          "english": "lively/busy"
+        },
+        {
+          "japanese": "元気",
+          "romaji": "genki",
+          "english": "healthy/fine"
+        },
+        {
+          "japanese": "天気",
+          "romaji": "tenki",
+          "english": "weather"
+        },
+        {
+          "japanese": "勉強",
+          "romaji": "benkyou",
+          "english": "study"
+        },
+        {
+          "japanese": "袋",
+          "romaji": "fukuro",
+          "english": "bag"
+        },
+        {
+          "japanese": "ください",
+          "romaji": "kudasai",
+          "english": "please give me"
+        }
+      ],
+      "demo_calls_used": 0
+    }
+  }
+}
