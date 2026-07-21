@@ -378,4 +378,5 @@ app.get('/api/profile', (req, res) => {
 // ==========================================
 // 5. SERVER START
 // ==========================================
-server.listen(8000, () => console.log(`🚀 Unified API Online: ws://localhost:8000`));
+const PORT = process.env.PORT || 8000;
+server.listen(PORT, () => console.log(`🚀 Unified API Online on port ${PORT}`));
