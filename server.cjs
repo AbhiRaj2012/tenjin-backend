@@ -379,4 +379,8 @@ app.get('/api/profile', (req, res) => {
 // 5. SERVER START
 // ==========================================
 const PORT = process.env.PORT || 8000;
-server.listen(PORT, () => console.log(`🚀 Unified API Online on port ${PORT}`));
+
+// Add '0.0.0.0' as the second argument!
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 Unified API Online on port ${PORT}`);
+});

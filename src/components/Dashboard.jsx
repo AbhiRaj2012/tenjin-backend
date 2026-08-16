@@ -13,14 +13,28 @@ export default function Dashboard({ navigateTo }) {
   const [isHeroHovered, setIsHeroHovered] = useState(false);
 
   // --- NEW: Backend Tracking State ---
-  const [studentStats, setStudentStats] = useState({ level: 1, xp: 0 });
+  const [studentStats, setStudentStats] = useState(() => {
+    const saved = localStorage.getItem('tenjin_progress');
+    return saved ? JSON.parse(saved) : { level: 1, xp: 0 };
+  });
   const [userId] = useState(() => localStorage.getItem('tenjin_user_id') || 'guest');
 
   useEffect(() => {
     // Fetch Level and XP from backend
     fetch(`${HTTP_BASE_URL}/api/profile?userId=${userId}`)
       .then(res => res.json())
-      .then(data => setStudentStats(data))
+      .then(data => {
+        const local = JSON.parse(localStorage.getItem('tenjin_progress')) || { level: 1, xp: 0 };
+        
+        // Protect against Google Cloud memory wipes. Only accept server data if it's higher than local data.
+        const totalBackendXP = (data.level * 1000) + data.xp; 
+        const totalLocalXP = (local.level * 1000) + local.xp;
+        
+        if (totalBackendXP >= totalLocalXP) {
+            setStudentStats(data);
+            localStorage.setItem('tenjin_progress', JSON.stringify({ level: data.level, xp: data.xp }));
+        }
+      })
       .catch(err => console.error("Failed to fetch profile", err));
 
     const storedHistory = JSON.parse(localStorage.getItem('tenjin_score_history')) || [];

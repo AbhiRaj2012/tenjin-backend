@@ -4,7 +4,7 @@
 const IS_LOCAL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
 // ⚠️ Replace this with your live Google Cloud Run URL once deployed!
-const LIVE_BACKEND_DOMAIN = 'tenjin-backend-xyz.a.run.app'; 
+const LIVE_BACKEND_DOMAIN = 'tenjin-backend-754422403085.asia-south1.run.app'; 
 
 export const HTTP_BASE_URL = IS_LOCAL 
   ? 'http://localhost:8000' 

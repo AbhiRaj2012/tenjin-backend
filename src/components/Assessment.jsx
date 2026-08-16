@@ -81,11 +81,17 @@ export default function Assessment({ quizMode, navigateTo }) {
     const earnedXP = computedScore * 10; // Award 10 XP per correct answer
     if (earnedXP > 0) {
       try {
-        await fetch('${HTTP_BASE_URL}/api/add-xp', {
+        const res = await fetch(`${HTTP_BASE_URL}/api/add-xp`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ userId: userId, amount: earnedXP })
         });
+        const data = await res.json();
+        
+        // --- NEW: Lock the returned XP into the browser's local storage ---
+        if (data.success) {
+           localStorage.setItem('tenjin_progress', JSON.stringify({ level: data.level, xp: data.xp }));
+        }
       } catch (err) {
         console.error("Failed to sync XP with server:", err);
       }
